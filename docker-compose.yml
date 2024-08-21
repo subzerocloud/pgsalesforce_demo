@@ -1,0 +1,26 @@
+services:
+  db:
+    image: ghcr.io/sfdev1010/pgsalesforce/postgres-salesforce:16
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=${SUPER_USER}
+      - POSTGRES_PASSWORD=${SUPER_USER_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+      - SF_INSTANCE=${SF_INSTANCE}
+      - SF_CLIENT_ID=${SF_CLIENT_ID}
+      - SF_CLIENT_SECRET=${SF_CLIENT_SECRET}
+      - SF_API_VERSION=${SF_API_VERSION}
+      - SF_OBJECTS_TO_SYNC=${SF_OBJECTS_TO_SYNC}
+      - SYNC_SCHEDULE=${SYNC_SCHEDULE}
+    command: [
+      "postgres",
+      "-c", "shared_preload_libraries=pgsalesforce,pg_cron",
+      "-c", "cron.database_name=${DB_NAME}"
+      # set the debug level to 1 to see the SOQL queries
+      # set the debug level to 2 to see the SOQL queries and HTTP requests
+      # , "-c", "log_min_messages=DEBUG1"
+    ]
+    volumes:
+      - "./sql:/docker-entrypoint-initdb.d"
+  
