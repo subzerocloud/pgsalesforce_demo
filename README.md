@@ -13,9 +13,13 @@ The end result is a PostgreSQL instace (running in docker) that you can spin up 
 ## Status
 This project is in early development. It is not yet ready for production use. Use only on a sandbox/dev Salesforce instance.
 
+If you are interested in using this commercially, please contact me at `sfdev1010 [at] gmail [dot] com`. The first 5 design partners will get a free license and full source code, the next 100 will get a perpetual license for a one time fee of $950 with full source code.
+
 ## Setup
 
-Create connected app in Salesforce and configure it (see [Configure a Connected App for the OAuth 2.0 Client Credentials Flow](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) and [OAuth 2.0 Client Credentials Flow for Server-to-Server Integration](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_client_credentials_flow.htm&type=5). The important parts when creating the connected app are:
+Create connected app in Salesforce and configure it (see [Configure a Connected App for the OAuth 2.0 Client Credentials Flow](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) and [OAuth 2.0 Client Credentials Flow for Server-to-Server Integration](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_client_credentials_flow.htm&type=5)).
+
+The important parts when creating the connected app are:
 
 - check "Enable OAuth Settings", "Enable for Device Flow" and "Enable Client Credentials Flow"
 - add "Manage user data via APIs (api)" to the Selected OAuth Scopes
