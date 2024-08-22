@@ -21,7 +21,7 @@ The end result is a PostgreSQL instace (running in docker) that you can spin up 
 ## Status
 This project is in early development. It is not yet ready for production use. Use only on a sandbox/dev Salesforce instance.
 
-If you are interested in using this commercially, please contact me at `sfdev1010 [at] gmail [dot] com`. The first 5 design partners will get a free license and full source code, the next 100 will get a perpetual license for a one time fee of $950 with full source code.
+If you are interested in using this commercially, please contact me at `sfdev1010 [at] gmail [dot] com`.
 
 ## Setup
 
