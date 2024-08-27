@@ -14,9 +14,10 @@ The end result is a PostgreSQL instace (running in docker) that you can spin up 
 - Advanced Analytics: Use the power of PostgreSQL to analyze Salesforce data
 - Data Consolidation: Consolidate data from multiple Salesforce instances and other sources into a single PostgreSQL database
 - Historical Data: Store historical data in PostgreSQL (Salesforce has limits on historical data)
-- Scalability and Cost: Run as many queries as you want on PostgreSQL without worrying about Salesforce API limits
+- Scalability: Run as many queries as you want on PostgreSQL
 - Reporting and Dashboards: Use tools like Tableau, PowerBI, Looker (Google Data Studio) to create reports and dashboards on Salesforce data without hitting the API limits
-- Create custom applications: Use PostgreSQL as a backend for custom applications that need to interact with Salesforce data without the complexity and limitations of the Salesforce API
+- Create custom applications: Use PostgreSQL as a backend for custom applications that need to interact with Salesforce data without the complexity of the Salesforce API
+- Privacy and Compliance: Unlike other solutions, this is a product, not a service, so you retain full control over your data, ensuring privacy and compliance with industry standards.
 
 ## Status
 This project is in early development. It is not yet ready for production use. Use only on a sandbox/dev Salesforce instance.
